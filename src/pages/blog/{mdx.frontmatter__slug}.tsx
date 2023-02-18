@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const BlogPost = ({ data, children }: any) => {
   const image: any = getImage(data.mdx.frontmatter.hero_image);
