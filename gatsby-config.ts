@@ -1,14 +1,14 @@
 import type { GatsbyConfig } from "gatsby";
 
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`, 
+  path: `.env.${process.env.NODE_ENV}`,
 })
-
+console.log("ENV: ---- ", process.env)
 const config: GatsbyConfig = {
   
   siteMetadata: {
     title: `fluently.`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://fluentlymain.gatsbyjs.io/`,
     description: "learning app to grind spanish",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

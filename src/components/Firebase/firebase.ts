@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
-import { } from "firebase/firestore"
 import {
+  Auth,
   getAuth,
   onAuthStateChanged,
 } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+  apiKey: "AIzaSyDsCQpVPIgl9LBp0eWs-ibAk1ZdKishSPo",
   authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
   projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
@@ -16,7 +16,7 @@ const firebaseConfig = {
 };
 
 let app
-let auth
+let auth: Auth
 
 if (typeof window !== "undefined") {
   app = app || initializeApp(firebaseConfig);
