@@ -6,7 +6,8 @@ import {
   navLinkItem,
   navLinkText,
   heading,
-  siteTitle
+  siteTitle,
+  loginButton,
   //@ts-ignore-next-line
 } from "./layout.module.css";
 
@@ -25,7 +26,12 @@ const Layout = ({ pageTitle, children }: any) => {
 
   return (
     <div className={container}>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <header className={siteTitle}>
+        {data.site.siteMetadata.title}
+        <Link to="/app/login">
+          <button className={loginButton}>Login</button>
+        </Link>
+      </header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>

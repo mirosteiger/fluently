@@ -2,6 +2,7 @@
   margin: auto;
   max-width: 500px;
   font-family: sans-serif;
+  
 }
 
 .heading {
@@ -23,8 +24,18 @@
 }
 
 .site-title {
-    font-size: 3rem;
-    color: gray;
-    font-weight: 700;
-    margin: 3rem 0;
-  }
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+.login-button {
+  padding: 1rem;
+  border: 1px solid #DDD;
+  background-color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 0px -1px #FFC7A6; 
+  box-shadow: 5px 5px 0px -1px #FFC7A6;
+}

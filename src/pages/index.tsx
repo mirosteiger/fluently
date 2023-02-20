@@ -5,14 +5,11 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Seo from "../components/seo";
 
 const IndexPage = () => {
+
   return (
     <Layout pageTitle="Fluently">
-      <Link to="/about">About 😘</Link>
-      <p>I'm making this to grind my spanish skillz.</p>
-      <StaticImage
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-        src="../images/doggo.webp"
-      />
+      <p>Bienvenido bruder</p>
+      <StaticImage src="../images/doggo.webp" alt="so n brauner doggo kp"/>
     </Layout>
   );
 };
